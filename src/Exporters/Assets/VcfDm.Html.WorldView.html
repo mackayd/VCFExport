@@ -1,0 +1,17 @@
+      <section id="view-world" class="view" aria-labelledby="world-title">
+        <h2 id="world-title">World View</h2>
+        <p class="lede">Explore the connected estate: VCF domains, clusters, hosts, workloads, networks and storage together. Click an object or its chevron to expand or collapse its children. Wheel to zoom and drag the canvas to pan.</p>
+        <div class="world-map-panel">
+          <div class="world-topbar">
+            <div><div class="world-eyebrow">INFRASTRUCTURE CONNECTION MAP</div><strong id="world-object-count"></strong></div>
+            <div class="world-search-control"><label class="sr-only" for="world-search">Find an object</label><input id="world-search" type="search" placeholder="Find a VM, host, datastore or setting…"><span id="world-search-count" aria-live="polite"></span></div>
+            <div class="world-actions"><button id="world-orientation" type="button" aria-label="Top-to-bottom layout" aria-pressed="false" title="Switch to top-to-bottom layout">Layout: Left → right</button><button id="world-reset" type="button">Fit estate</button><button id="world-expand-estate" type="button" title="Show domains, clusters, hosts and workloads">Expand estate</button><button id="world-collapse" type="button" title="Show VCF instances only">Collapse all</button><span id="world-scale">100%</span></div>
+          </div>
+          <div id="world-viewport" class="world-viewport" tabindex="0" aria-label="Interactive VCF relationship world. Click an object or its chevron to toggle children; Enter or Space does the same. Wheel to zoom; drag to pan. Home fits the estate, Escape clears selection, arrow keys pan.">
+            <svg id="world-svg" role="group" aria-label="VCF object connection map"><g id="world-scene"></g></svg>
+            <aside id="world-detail" class="world-inspector" aria-label="Object attributes" aria-live="polite"><h3>Object inspector</h3><p>Hover or select an object to see its key attributes.</p></aside>
+            <div class="world-minimap-box"><span>Estate overview</span><svg id="world-minimap" role="img" aria-label="Estate minimap. Click to move the main view."></svg></div>
+          </div>
+          <div class="world-footer"><div class="world-legend"><span class="legend-cluster">Cluster</span><span class="legend-host">ESXi host</span><span class="legend-vm">VM / template</span><span class="legend-storage">Storage</span><span class="legend-network">Network / switch</span><span class="legend-group">Expandable group</span></div><span>Click to explore · Scroll to zoom · Drag to pan</span></div>
+        </div>
+      </section>

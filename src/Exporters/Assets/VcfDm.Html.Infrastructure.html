@@ -1,0 +1,18 @@
+      <section id="view-explorer" class="view" aria-labelledby="explorer-title">
+        <h2 id="explorer-title">Infrastructure Explorer</h2>
+        <p class="lede">Browse the estate by ownership and placement, inspect configuration, and follow related objects into World View.</p>
+        <div class="infra-workspace">
+          <div class="infra-topbar"><div><span class="infra-eyebrow">CONNECTED INFRASTRUCTURE</span><h3>Your captured estate</h3></div><div id="infra-totals" class="infra-totals"></div></div>
+          <div class="infra-layout">
+            <aside class="infra-browser" aria-label="Infrastructure navigation">
+              <div class="infra-browser-tools">
+                <label class="sr-only" for="infra-search">Search infrastructure</label><input id="infra-search" type="search" placeholder="Search names, versions, addresses…">
+                <label class="sr-only" for="infra-type">Filter object type</label><select id="infra-type"><option value="">All object types</option></select>
+                <div class="infra-browser-caption"><span id="infra-match-count" aria-live="polite"></span><button id="infra-clear" type="button">Clear filters</button></div>
+              </div>
+              <div id="infra-tree" class="infra-tree" aria-label="Infrastructure hierarchy"></div>
+            </aside>
+            <section id="infra-detail" class="infra-detail" aria-label="Selected infrastructure object" aria-live="polite"><div class="infra-empty">Select an object to inspect its configuration.</div></section>
+          </div>
+        </div>
+      </section>

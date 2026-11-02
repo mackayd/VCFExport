@@ -1,0 +1,13 @@
+      <section id="view-virtual" class="view" aria-labelledby="virtual-title">
+        <h2 id="virtual-title">Virtual Configuration</h2>
+        <p class="lede">Object-centred access to the complete vSphere configuration captured by VCFexport. Select an object to see its properties, child datasets, and related infrastructure.</p>
+        <div class="config-toolbar">
+          <div class="control"><label for="config-type">Object type</label><select id="config-type"></select></div>
+          <div class="control config-search"><label for="config-search">Search objects</label><input id="config-search" type="search" placeholder="Name, ID, source, state…"></div>
+          <button id="config-clear" class="button" type="button">Clear search</button>
+        </div>
+        <div class="config-shell">
+          <section class="panel config-list-panel" aria-label="Virtual configuration objects"><div id="config-list" class="config-list"></div></section>
+          <section id="config-dossier" class="panel config-dossier" aria-live="polite"><div class="config-empty">Select an object to view its configuration.</div></section>
+        </div>
+      </section>

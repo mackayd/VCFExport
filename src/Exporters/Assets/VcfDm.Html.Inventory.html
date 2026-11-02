@@ -1,0 +1,13 @@
+      <section id="view-detailed" class="view" aria-labelledby="detailed-title">
+        <h2 id="detailed-title">Detailed Inventory</h2>
+        <p class="lede">Explore compute, storage, networking and host configuration collected by VCFexport. Select a row to inspect every captured property, or export inventory to Excel for analysis.</p>
+        <div id="detailed-summary" class="cards"></div>
+        <div class="config-toolbar">
+          <div class="control"><label for="detailed-category">Inventory category</label><select id="detailed-category"></select></div>
+          <button type="button" class="button primary" id="detailed-download">Download inventory Excel (.xlsx)</button>
+          <span id="detailed-provenance" class="footnote"></span>
+        </div>
+        <div id="detailed-status" class="banner"></div>
+        <div id="detailed-grid"></div>
+        <section id="detailed-detail" class="panel" aria-live="polite"><h3>Row details</h3><p>Select an inventory row to see every collected field.</p></section>
+      </section>
