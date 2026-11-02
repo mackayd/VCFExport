@@ -15,27 +15,7 @@ Collect VMware Cloud Foundation and vSphere inventory into portable HTML, JSON, 
 
 Collector version: **0.1.0**. Snapshot schema: **1.1**. Each live run starts from one SDDC Manager and collects its discovered or explicitly selected vCenters.
 
-## Report previews
 
-These screenshots use synthetic inventory from the two-datacenter example report.
-
-### World View
-
-Explore connected objects, click to reveal child objects, and inspect relationships between workloads, networks and storage.
-
-![World View showing virtual machines connected to a port group, with an object inspector and estate minimap](images/World-viewer.png)
-
-### Infrastructure Explorer
-
-Browse domains, clusters and hosts in the infrastructure tree, inspect configuration, and follow related objects into World View.
-
-![Infrastructure Explorer showing a stretched management cluster, its hosts and related configuration](images/Infra-explorer.png)
-
-### Findings
-
-Review findings by severity, filter the captured evidence, and export results covering certificate expiry, version drift and backup configuration.
-
-![Findings showing severity totals and a searchable table of certificate, lifecycle and backup findings](images/Findings.png)
 
 ## Requirements
 
@@ -91,6 +71,28 @@ Replace the example path with your saved JSON snapshot. HTML-only regeneration d
 
 Existing schema 1.0 snapshots remain supported. Their detailed inventory and collection-status names are upgraded in memory to schema 1.1 without changing the original JSON file. Records that were not captured remain absent.
 
+## Report previews
+
+These screenshots use synthetic inventory from the two-datacenter example report.
+
+### World View
+
+Explore connected objects, click to reveal child objects, and inspect relationships between workloads, networks and storage.
+
+![World View showing virtual machines connected to a port group, with an object inspector and estate minimap](images/World-viewer.png)
+
+### Infrastructure Explorer
+
+Browse domains, clusters and hosts in the infrastructure tree, inspect configuration, and follow related objects into World View.
+
+![Infrastructure Explorer showing a stretched management cluster, its hosts and related configuration](images/Infra-explorer.png)
+
+### Findings
+
+Review findings by severity, filter the captured evidence, and export results covering certificate expiry, version drift and backup configuration.
+
+![Findings showing severity totals and a searchable table of certificate, lifecycle and backup findings](images/Findings.png)
+
 ## Licence
 
-VCFexport is distributed under the included [MIT licence](LICENSE). The integrated inventory functions retain their MIT copyright and permission notice in `src/Collectors/VcfDm.Inventory.Functions.ps1`. Preserve the licence and included notices when redistributing this package.
+VCFexport is distributed under the included [MIT licence](LICENSE). 
