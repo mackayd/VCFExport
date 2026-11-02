@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="src/Exporters/Assets/Branding//vcfexport-logo-dark.png">
+    <source media="(prefers-color-scheme: dark)" srcset="src/Exporters/Assets/Branding/vcfexport-logo-dark.png">
     <img src="src/Exporters/Assets/Branding/vcfexport-logo.png" alt="VCFexport" width="640">
   </picture>
 </p>
@@ -14,6 +14,28 @@ Collect VMware Cloud Foundation and vSphere inventory into portable HTML, JSON, 
 
 
 Collector version: **0.1.0**. Snapshot schema: **1.1**. Each live run starts from one SDDC Manager and collects its discovered or explicitly selected vCenters.
+
+## Report previews
+
+These screenshots use synthetic inventory from the two-datacenter example report.
+
+### World View
+
+Explore connected objects, click to reveal child objects, and inspect relationships between workloads, networks and storage.
+
+![World View showing virtual machines connected to a port group, with an object inspector and estate minimap](images/World-viewer.png)
+
+### Infrastructure Explorer
+
+Browse domains, clusters and hosts in the infrastructure tree, inspect configuration, and follow related objects into World View.
+
+![Infrastructure Explorer showing a stretched management cluster, its hosts and related configuration](images/Infra-explorer.png)
+
+### Findings
+
+Review findings by severity, filter the captured evidence, and export results covering certificate expiry, version drift and backup configuration.
+
+![Findings showing severity totals and a searchable table of certificate, lifecycle and backup findings](images/Findings.png)
 
 ## Requirements
 
